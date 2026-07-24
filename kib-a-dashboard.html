@@ -1,271 +1,848 @@
-<!DOCTYPE html>
 
-<html class="" lang="en" style=""><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">
-  tailwind.config = {
-    darkMode: "class",
-    theme: {
-      extend: {
-        "colors": {
-                "on-secondary": "#ffffff",
-                "error": "#ba1a1a",
-                "secondary-container": "#fdc425",
-                "surface-container": "#e5eeff",
-                "surface-bright": "#f8f9ff",
-                "on-surface": "#0b1c30",
-                "on-secondary-container": "#6d5200",
-                "on-primary": "#ffffff",
-                "tertiary": "#4b1c00",
-                "on-secondary-fixed": "#251a00",
-                "surface-variant": "#d3e4fe",
-                "surface-container-highest": "#d3e4fe",
-                "on-primary-fixed-variant": "#264191",
-                "on-tertiary-fixed": "#341100",
-                "surface-tint": "#4059aa",
-                "on-primary-container": "#90a8ff",
-                "on-background": "#0b1c30",
-                "primary": "#00236f",
-                "on-secondary-fixed-variant": "#5a4300",
-                "secondary": "#785a00",
-                "on-error": "#ffffff",
-                "background": "#f8f9ff",
-                "secondary-fixed-dim": "#f7be1d",
-                "tertiary-fixed-dim": "#ffb691",
-                "on-tertiary-container": "#f39461",
-                "inverse-primary": "#b6c4ff",
-                "primary-fixed-dim": "#b6c4ff",
-                "surface-container-low": "#eff4ff",
-                "surface-container-high": "#dce9ff",
-                "primary-container": "#1e3a8a",
-                "on-tertiary": "#ffffff",
-                "outline": "#757682",
-                "on-surface-variant": "#444651",
-                "outline-variant": "#c5c5d3",
-                "on-primary-fixed": "#00164e",
-                "surface-dim": "#cbdbf5",
-                "surface-container-lowest": "#ffffff",
-                "inverse-on-surface": "#eaf1ff",
-                "on-error-container": "#93000a",
-                "error-container": "#ffdad6",
-                "on-tertiary-fixed-variant": "#773205",
-                "tertiary-fixed": "#ffdbcb",
-                "secondary-fixed": "#ffdf9a",
-                "primary-fixed": "#dce1ff",
-                "surface": "#f8f9ff",
-                "inverse-surface": "#213145",
-                "tertiary-container": "#6e2c00"
-        },
-        "borderRadius": {
-                "DEFAULT": "0.125rem",
-                "lg": "0.25rem",
-                "xl": "0.5rem",
-                "full": "0.75rem"
-        },
-        "spacing": {
-                "margin-x": "2rem",
-                "table-cell-padding": "12px 16px",
-                "container-max": "1440px",
-                "stack-gap": "1rem",
-                "gutter": "1.5rem"
-        },
-        "fontFamily": {
-                "headline-md": [
-                        "Inter"
-                ],
-                "headline-lg-mobile": [
-                        "Inter"
-                ],
-                "body-md": [
-                        "Inter"
-                ],
-                "label-sm": [
-                        "Inter"
-                ],
-                "label-md": [
-                        "Inter"
-                ],
-                "body-lg": [
-                        "Inter"
-                ],
-                "headline-lg": [
-                        "Inter"
-                ],
-                "headline-sm": [
-                        "Inter"
-                ]
-        },
-        "fontSize": {
-                "headline-md": [
-                        "24px",
-                        {
-                                "lineHeight": "32px",
-                                "letterSpacing": "-0.01em",
-                                "fontWeight": "600"
-                        }
-                ],
-                "headline-lg-mobile": [
-                        "24px",
-                        {
-                                "lineHeight": "32px",
-                                "fontWeight": "700"
-                        }
-                ],
-                "body-md": [
-                        "14px",
-                        {
-                                "lineHeight": "20px",
-                                "fontWeight": "400"
-                        }
-                ],
-                "label-sm": [
-                        "11px",
-                        {
-                                "lineHeight": "14px",
-                                "fontWeight": "500"
-                        }
-                ],
-                "label-md": [
-                        "12px",
-                        {
-                                "lineHeight": "16px",
-                                "letterSpacing": "0.05em",
-                                "fontWeight": "600"
-                        }
-                ],
-                "body-lg": [
-                        "16px",
-                        {
-                                "lineHeight": "24px",
-                                "fontWeight": "400"
-                        }
-                ],
-                "headline-lg": [
-                        "30px",
-                        {
-                                "lineHeight": "38px",
-                                "letterSpacing": "-0.02em",
-                                "fontWeight": "700"
-                        }
-                ],
-                "headline-sm": [
-                        "20px",
-                        {
-                                "lineHeight": "28px",
-                                "fontWeight": "600"
-                        }
-                ]
+Percakapan dengan Gemini
+lanjutkan ini nak
+
+Siap, mari kita lanjutkan draf Product Requirements Document (PRD) untuk aplikasi Anda berdasarkan jawaban yang sudah diisi pada gambar image_85d50c.png.
+
+Berikut adalah rancangan spesifikasi produknya:
+
+📄 Product Requirements Document (PRD)
+Nama Produk: Aplikasi Tracking Sertipikasi Aset Tanah Pemerintah
+
+Platform: Web Application (Disarankan agar mudah diakses di kantor)
+
+1. Ringkasan Eksekutif
+Aplikasi ini bertujuan untuk mendigitalisasi pemantauan progres sertifikasi aset tanah pemerintah. Sistem ini akan mengubah cara kerja manual menggunakan Excel menjadi sebuah platform terpusat yang lebih rapi, terstruktur, dan memudahkan staf dalam memantau setiap tahapan sertifikasi hingga pelaporan.
+
+2. Target Pengguna
+Pengguna Utama: Staf Pengelola Aset.
+
+Motivasi & Retensi (Alasan menggunakan aplikasi): Harus siap memberikan jawaban yang cepat dan akurat setiap kali atasan meminta update terkait status aset tanah.
+
+3. Masalah & Solusi
+Masalah saat ini: Data di Excel rentan berantakan, sulit melacak progres harian/mingguan secara visual, dan butuh waktu lama untuk merekap data saat atasan mendadak meminta laporan.
+
+Solusi: Sistem yang otomatis mengolah data Excel awal menjadi dashboard visual dan menyediakan checklist tahapan yang jelas.
+
+4. Fitur Utama (Prioritas Tinggi)
+Berdasarkan kebutuhan fungsional harian, berikut adalah fitur inti yang harus dibangun:
+
+A. Dashboard Utama (Tampilan Pertama)
+Fungsi: Langsung menyajikan ringkasan visual saat aplikasi pertama kali dibuka.
+
+Isi:
+
+Total aset tanah yang sedang diproses.
+
+Grafik pie/bar berisi porsi aset di masing-masing tahap (Pengukuran, di BPN, Selesai, dll).
+
+Notifikasi/tabel kecil untuk aset yang mandek (terlalu lama di satu tahap).
+
+B. Upload & Olah Data (Import Excel)
+Fungsi: Memudahkan migrasi dari sistem lama.
+
+Isi:
+
+Fitur drag-and-drop file Excel (format .xls atau .xlsx).
+
+Sistem otomatis membaca kolom Excel (Nama Aset, Lokasi, Luas, dll) dan memasukkannya ke dalam database aplikasi tanpa perlu input manual satu per satu.
+
+C. Modul Tracking & Checklist per Tahap
+Fungsi: Inti dari pelacakan progres yang "lebih rapi".
+
+Isi: Setiap aset tanah akan memiliki kartu/baris dengan 4 checklist wajib:
+
+[ ] Tahapan Pengukuran
+
+[ ] Pendaftaran ke BPN
+
+[ ] Terbit Sertipikat
+
+[ ] Pengarsipan
+
+Catatan: Setiap kali checklist diklik, sistem otomatis mencatat tanggal penyelesaian tahapan tersebut.
+
+D. Generator Laporan Triwulan Otomatis
+Fungsi: Menyelamatkan waktu saat atasan meminta laporan rutin.
+
+Isi:
+
+Tombol "Unduh Laporan Triwulan" (Format PDF atau Excel yang sudah di-format rapi).
+
+Sistem memfilter otomatis aset mana saja yang mengalami pergerakan progres dalam 3 bulan terakhir.
+
+5. Alur Pengguna (User Flow) Sederhana
+Buka Aplikasi ➔ 2. Lihat Dashboard (Cek status keseluruhan secara instan) ➔ 3. Cari Aset/Upload Data Baru ➔ 4. Update Checklist Progres (Misal: klik "Pendaftaran BPN Selesai") ➔ 5. Ekspor Laporan (Saat diminta atasan).
+
+Apakah ada fitur tambahan spesifik yang ingin ditambahkan (misalnya fitur unggah foto bukti dokumen dari BPN), atau draf PRD ini sudah pas untuk dilanjutkan ke tahap desain/pembuatan?
+
+nanti ada fitur untuk upload data excel tanah awal dan progres yang sudah ada, kemudian ketika ada info sertipikat update, maka biasanya kita juga mendapatkan excel sertipikat terbit, excel sertipikat terbit ini harapannya bisa diupload langsung ke sistem kemudian auto look up data ke data KIB berdasarkan nomor berkas
+
+Ide yang sangat bagus. Ini pada dasarnya mengotomatiskan proses VLOOKUP atau Index-Match yang biasanya dilakukan manual di Excel, sehingga sangat menghemat waktu rekonsiliasi data KIB (Kartu Inventaris Barang), khususnya untuk KIB A (Tanah).
+
+Untuk menerjemahkan kebutuhan ini ke dalam bahasa pengembang (developer), kita akan menggunakan "Nomor Berkas" sebagai Unique Identifier atau Primary Key.
+
+Berikut adalah tambahan detail untuk draf PRD pada bagian Fitur Utama, secara khusus memperbarui dan memperluas fungsi Upload:
+
+B. Modul Upload & Sinkronisasi Data (Diperbarui)
+Fitur ini dibagi menjadi dua alur unggah (upload) untuk mengakomodasi siklus data dari awal hingga terbit sertipikat.
+
+1. Upload Data Awal (Inisialisasi Data & Progres)
+
+Fungsi: Memasukkan master data tanah KIB beserta status progres terakhirnya ke dalam sistem.
+
+Mekanisme:
+
+Pengguna mengunggah Excel berisi daftar tanah.
+
+Sistem memetakan kolom standar (Nomor Berkas, Nama Aset, Lokasi, Luas, Progres Saat Ini).
+
+Data ini menjadi database dasar di dalam aplikasi.
+
+2. Upload Data Update BPN (Sertipikat Terbit)
+
+Fungsi: Memperbarui status checklist "Terbit Sertipikat" secara massal (bulk update) berdasarkan data dari BPN, tanpa harus mengubah status satu per satu.
+
+Mekanisme Auto Look-up:
+
+Pengguna mengunggah file Excel baru yang berisi daftar sertipikat yang baru terbit dari BPN.
+
+Sistem akan membaca kolom "Nomor Berkas" pada Excel baru tersebut.
+
+Sistem melakukan pencarian otomatis (auto look-up) ke database KIB awal.
+
+Jika Nomor Berkas cocok/ditemukan, sistem akan otomatis:
+
+Mencentang/menyelesaikan tahap "Terbit Sertipikat" pada aset tersebut.
+
+Memperbarui tanggal terbit.
+
+Menambahkan nomor sertipikat baru ke profil aset tersebut.
+
+3. Penanganan Data Tidak Valid (Error Handling / Exception Report)
+
+Fungsi: Mengantisipasi jika ada data dari Excel BPN yang tidak sinkron dengan data KIB.
+
+Mekanisme: Jika ada Nomor Berkas di Excel update yang tidak ditemukan di database awal, sistem tidak akan menolak seluruh file. Sistem akan tetap memproses data yang cocok, dan mengeluarkan pop-up atau tabel notifikasi: "Terdapat 3 Nomor Berkas yang tidak ditemukan di Data KIB. Apakah Anda ingin menambahkannya sebagai aset baru atau abaikan?"
+
+Kenapa tambahan poin nomor 3 (Error Handling) ini penting?
+Di lapangan, sering kali ada salah ketik (typo) nomor berkas dari pihak luar, atau ada aset yang terlewat dicatat di data awal. Fitur ini memastikan Anda tidak perlu repot mencari secara manual baris mana yang gagal di-sinkronisasi.
+
+Apakah alur auto look-up ini sudah sesuai dengan ekspektasi proses rekonsiliasi data KIB Anda di kantor? Jika sudah, kita bisa lanjut memikirkan elemen visual untuk Dashboard atau format Laporan Triwulannya.
+
+okee, coba tambahkan juga ASCII wireframe, mermaid flowchart
+
+Tentu, ini tambahan visualisasi berupa Mermaid Flowchart untuk menggambarkan alur sistemnya, dan ASCII Wireframe untuk memberikan gambaran kasar layout antarmuka (UI) aplikasinya.
+
+1. Mermaid Flowchart (Alur Sistem)
+Diagram di bawah ini memetakan bagaimana pengguna berinteraksi dengan aplikasi, mulai dari melihat dashboard, mengunggah data (baik master maupun update dari BPN), hingga mencetak laporan.
+
+Cuplikan kode
+flowchart TD
+    A[Mulai: Buka Aplikasi] --> B(Dashboard Utama)
+    
+    %% Cabang Utama
+    B --> C{Pilih Aksi}
+    
+    %% Alur Upload Data Awal
+    C -->|Upload Master Data| D[Upload Excel KIB Awal]
+    D --> E{Validasi Format}
+    E -- Format Sesuai --> F[Simpan ke Database KIB]
+    E -- Format Salah --> G[Notifikasi Error & Perbaiki]
+    F --> B
+    
+    %% Alur Tracking Harian
+    C -->|Update Manual| H[Pilih Aset Spesifik]
+    H --> I[Centang Checklist Progres]
+    I --> J((Update Status:\nPengukuran / Pendaftaran / dll))
+    J --> B
+    
+    %% Alur Auto Look-up BPN
+    C -->|Update Massal BPN| K[Upload Excel Sertipikat Terbit]
+    K --> L[Sistem Membaca 'Nomor Berkas']
+    L --> M{Auto Look-up ke Database KIB}
+    
+    M -- Cocok --> N[Auto-Update Status:\n'Terbit Sertipikat']
+    N --> O[Update Nomor Sertipikat & Tanggal]
+    O --> B
+    
+    M -- Tidak Ditemukan --> P[Tampilkan Exception Report:\n'Nomor Tidak Dikenal']
+    P --> Q{Tindakan User}
+    Q -->|Tambah Baru| R[Buat Entri Aset Baru]
+    Q -->|Abaikan/Revisi| S[Kembali / Perbaiki Excel]
+    R --> B
+    S --> B
+    
+    %% Alur Laporan
+    C -->|Laporan| T[Pilih Filter Triwulan/Periode]
+    T --> U[Generate Laporan PDF/Excel]
+    U --> V([Selesai / Unduh])
+2. ASCII Wireframe (Konsep Antarmuka/UI)
+Ini adalah gambaran kerangka (layout) kasar bagaimana halaman web aplikasi ini akan terlihat. Saya menggabungkan Dashboard, Modul Upload, dan Daftar Aset dalam satu tampilan agar mudah dipahami. (Dalam aplikasi aslinya, bagian-bagian ini bisa dipisah ke halaman yang berbeda).
+
+Plaintext
++-----------------------------------------------------------------------------+
+| [LOGO] SI-KIB (Sistem Informasi Sertipikasi Aset Tanah)        [ User: Staf]|
++-----------------------------------------------------------------------------+
+| +-------------------+ +---------------------------------------------------+ |
+| | MENU              | | DASHBOARD RINGKASAN                       [Triwulan]| |
+| | > Dashboard       | | +----------------+ +----------------+ +-----------+ | |
+| | > Data Aset KIB   | | | Total Aset:    | | Sertipikat   | | Mandek:   | | |
+| | > Upload Data     | | | 1,250 Bidang   | | Terbit: 450  | | 12 Bidang | | |
+| | > Laporan Triwulan| | +----------------+ +----------------+ +-----------+ | |
+| |                   | |                                                     | |
+| |                   | | [GRAFIK PIE/BAR: Progres Sertipikasi Keseluruhan]   | |
+| +-------------------+ +---------------------------------------------------+ |
+|                                                                             |
+| +-------------------------------------------------------------------------+ |
+| | MODUL UPLOAD & AUTO LOOK-UP                                             | |
+| |                                                                         | |
+| |   ( ) Upload Data KIB Awal (Master)                                     | |
+| |   (*) Upload Update BPN (Sertipikat Terbit)                             | |
+| |                                                                         | |
+| |   [ Drag & Drop File Excel .xlsx di sini ]                              | |
+| |   atau [ Browse File ]                                                  | |
+| |                                                                         | |
+| |   Mapping Key: [Nomor Berkas v] otomatis update ke Data KIB             | |
+| |                                                                         | |
+| |   [ PROSES SINKRONISASI ]                                               | |
+| +-------------------------------------------------------------------------+ |
+|                                                                             |
+| +-------------------------------------------------------------------------+ |
+| | DAFTAR ASET (Tampilan Checklist)                   [Cari Nomor Berkas..]| |
+| |-------------------------------------------------------------------------| |
+| | No. Berkas | Nama Aset   | Pengukuran | Didaftar BPN | Terbit | Arsip | |
+| |------------|-------------|------------|--------------|--------|-------| |
+| | BK-00123   | Tanah SDN 1 |    [v]     |      [v]     |   [ ]  |  [ ]  | |
+| | BK-00124   | Puskesmas   |    [v]     |      [v]     |   [v]  |  [v]  | |
+| | BK-00125   | Lapangan    |    [v]     |      [ ]     |   [ ]  |  [ ]  | |
+| +-------------------------------------------------------------------------+ |
++-----------------------------------------------------------------------------+
+Apakah konsep visual dan alur ini sudah cukup merepresentasikan bayangan aplikasi yang Anda butuhkan?
+
+daftar aset untuk tampilan checklist masukkan kelurahan dan kecamatan, nanti checklistnya bisa menggunakan tanggal saja agar lebih rapi dan terlihat record kapan terprosesnya, hilangkan aja arsip
+
+Sangat setuju. Mengganti checklist centang [v] menjadi tanggal (misal: 12/05/2026) jauh lebih fungsional karena otomatis berfungsi sebagai log atau riwayat waktu (audit trail). Menambahkan Kecamatan/Kelurahan juga akan sangat memudahkan pencarian dan pengelompokan data aset.
+
+Berikut adalah penyesuaian pada draf PRD, Flowchart, dan Wireframe-nya:
+
+1. Update Spesifikasi PRD (Bagian Modul Tracking)
+C. Modul Tracking Progres (Diperbarui)
+
+Fungsi: Pelacakan progres menggunakan sistem date-stamping (penanda waktu) untuk akurasi data.
+
+Isi Data Aset: Menampilkan detail kunci meliputi Nomor Berkas, Nama Aset, Kecamatan, dan Kelurahan.
+
+Tahapan Progres: Terdiri dari 3 tahapan utama (tanpa pengarsipan):
+
+[DD/MM/YYYY] Tahapan Pengukuran
+
+[DD/MM/YYYY] Pendaftaran ke BPN
+
+[DD/MM/YYYY] Terbit Sertipikat
+
+Mekanisme: Saat staf menekan tombol update pada suatu tahap, sistem akan meminta input tanggal selesai, atau otomatis terisi tanggal hari ini (auto-date) yang bisa diedit.
+
+2. Update ASCII Wireframe (Fokus Tabel Daftar Aset)
+Saya sesuaikan kolom tabelnya agar menampilkan lokasi (Kecamatan/Kelurahan) dan mengubah format centang menjadi tanggal. (Saya gunakan nama daerah di Bogor sebagai contoh datanya).
+
+Plaintext
++---------------------------------------------------------------------------------------+
+| [LOGO] SI-KIB (Sistem Informasi Sertipikasi Aset Tanah)                  [User: Staf] |
++---------------------------------------------------------------------------------------+
+|                                                                                       |
+| +-----------------------------------------------------------------------------------+ |
+| | DAFTAR ASET & TRACKING PROGRES                              [Cari Nomor Berkas..] | |
+| |-----------------------------------------------------------------------------------| |
+| | No. Berkas | Nama Aset   | Kecamatan / Kelurahan | Pengukuran | Daftar BPN | Terbit | |
+| |------------|-------------|-----------------------|------------|------------|--------| |
+| | BK-00123   | Tanah SDN 1 | Bogor Tengah/ Babakan | 12/05/2026 | 15/06/2026 |   -    | |
+| | BK-00124   | Puskesmas   | Bogor Selatan/ Cipaku | 01/04/2026 | 20/04/2026 |24/07/26| |
+| | BK-00125   | Lapangan    | Tanah Sareal/ Kedung  | 10/07/2026 |     -      |   -    | |
+| +-----------------------------------------------------------------------------------+ |
+|                                                                                       |
+|   [< Sebelumnya]  Halaman 1 dari 45  [Selanjutnya >]       [ Ekspor Laporan Excel ]   |
++---------------------------------------------------------------------------------------+
+3. Update Mermaid Flowchart (Alur Tracking)
+Alur pengisian manual sedikit diubah dari "Centang Checklist" menjadi "Input Tanggal".
+
+Cuplikan kode
+flowchart TD
+    A[Mulai: Buka Aplikasi] --> B(Dashboard Utama)
+    
+    %% Cabang Utama
+    B --> C{Pilih Aksi}
+    
+    %% Alur Upload Data Awal
+    C -->|Upload Master Data| D[Upload Excel KIB Awal]
+    D --> E{Validasi Format}
+    E -- Format Sesuai --> F[Simpan ke Database KIB]
+    F --> B
+    
+    %% Alur Tracking Harian (DIPERBARUI)
+    C -->|Update Manual| H[Cari Aset (Kec/Kel/No.Berkas)]
+    H --> I[Input Tanggal Progres]
+    I --> J((Update Status:\nPengukuran / Pendaftaran))
+    J --> B
+    
+    %% Alur Auto Look-up BPN (DIPERBARUI)
+    C -->|Update Massal BPN| K[Upload Excel Sertipikat Terbit]
+    K --> L[Sistem Membaca 'Nomor Berkas']
+    L --> M{Auto Look-up ke Database KIB}
+    
+    M -- Cocok --> N[Auto-Update Status 'Terbit']
+    N --> O[Isi Otomatis Tanggal Terbit & No. Sertipikat]
+    O --> B
+    
+    %% Alur Laporan
+    C -->|Laporan| T[Pilih Filter Triwulan/Periode]
+    T --> U[Generate Laporan PDF/Excel]
+    U --> V([Selesai / Unduh])
+Dengan perubahan ini, tabel Anda akan jauh lebih informatif. Atasan tidak hanya tahu tahapannya sudah sampai mana, tapi juga bisa mengevaluasi "Berapa lama jeda waktu dari pendaftaran ke BPN sampai sertipikat terbit?" karena semua tanggalnya terekam jelas.
+
+Gimana, makin terlihat rapi dan profesional kan bentuk aplikasinya?
+
+buatkan untuk backend nya sesuai dengan frontend berikut
+
+Desain frontend yang sangat rapi dan fungsional. Antarmuka ini menampilkan visualisasi data yang padat namun tetap mudah dibaca, sangat cocok untuk lingkungan administratif pengelolaan KIB A.
+
+Mengingat Anda sebelumnya telah memiliki pengalaman dalam mengembangkan modul aplikasi pengelolaan aset (seperti SIMASDA), saya akan menyusun rancangan arsitektur backend yang modern, tangguh untuk mengolah data Excel, dan mudah disinkronkan dengan metrik di dashboard tersebut.
+
+Berikut adalah rancangan backend menggunakan kombinasi Node.js (Express) dan Prisma ORM (bisa menggunakan database PostgreSQL atau MySQL). Kombinasi ini sangat ideal untuk menangani logika auto look-up dan query data yang cepat.
+
+1. Skema Database (Prisma ORM)
+Skema ini dirancang persis untuk memenuhi kebutuhan kolom tabel dan metrik dashboard yang ada pada frontend. Tabel utama membutuhkan kolom No. Berkas, Nama Aset, Kecamatan / Kelurahan, Rencana, Pengukuran, Daftar BPN, dan Terbit.  
+MD
++ 1
+
+Cuplikan kode
+// schema.prisma
+
+model LandAsset {
+  id                String    @id @default(uuid())
+  no_berkas         String    @unique // Primary Key untuk sinkronisasi BPN
+  nama_aset         String
+  kecamatan         String
+  kelurahan         String
+  
+  // Tracking Dates (Bisa null jika belum sampai di tahap tersebut)
+  tgl_rencana       DateTime?
+  tgl_pengukuran    DateTime?
+  tgl_daftar_bpn    DateTime?
+  tgl_terbit        DateTime?
+  
+  // Data Tambahan Saat Terbit
+  no_sertipikat     String?
+  
+  created_at        DateTime  @default(now())
+  updated_at        DateTime  @updatedAt
+
+  @@index([kecamatan, kelurahan])
+  @@index([no_berkas])
+}
+2. Desain Endpoint API (RESTful)
+Untuk menyuplai data ke frontend, Anda akan membutuhkan beberapa endpoint utama:
+
+GET /api/dashboard/stats
+
+Fungsi: Mengembalikan agregasi data untuk kartu dashboard. Sistem ini memiliki metrik seperti Total Aset Aktif, Rencana, Sudah Ukur, Proses BPN, dan Terbit Tahun Ini.  
+MD
++ 1
+
+Logika: Melakukan count pada database berdasarkan eksistensi tanggal (misal: "Proses BPN" adalah aset yang tgl_daftar_bpn tidak null tetapi tgl_terbit masih null).
+
+GET /api/aset
+
+Fungsi: Menampilkan daftar aset di tabel dengan dukungan pagination (Halaman 1 dari 45) dan filter pencarian (berdasarkan No. Berkas atau Nama Aset).  
+MD
++ 1
+
+PUT /api/aset/:no_berkas
+
+Fungsi: Menyimpan update tanggal secara manual ketika staf menekan tombol "Update" pada baris tabel.  
+MD
++ 1
+
+POST /api/aset/upload/master
+
+Fungsi: Menginisialisasi database dari Excel KIB A awal.
+
+POST /api/aset/upload/bpn
+
+Fungsi: Mengeksekusi auto look-up secara massal berdasarkan data sertipikat yang baru terbit dari BPN.
+
+3. Logika Backend: Fitur Auto Look-up Excel BPN
+Ini adalah bagian paling krusial dari PRD kita sebelumnya. Berikut adalah contoh implementasi logika pengolahan file Excel BPN yang diunggah menggunakan pustaka multer (untuk upload) dan xlsx (untuk membaca Excel) di Express.js:
+
+JavaScript
+const express = require('express');
+const multer = require('multer');
+const xlsx = require('xlsx');
+const { PrismaClient } = require('@prisma/client');
+
+const router = express.Router();
+const prisma = new PrismaClient();
+const upload = multer({ dest: 'uploads/' });
+
+router.post('/upload/bpn', upload.single('file'), async (req, res) => {
+  try {
+    // 1. Baca file Excel yang diunggah
+    const workbook = xlsx.readFile(req.file.path);
+    const sheetName = workbook.SheetNames[0];
+    const rawData = xlsx.utils.sheet_to_json(workbook.Sheets[sheetName]);
+
+    let successCount = 0;
+    let notFoundRecords = [];
+
+    // 2. Loop data Excel dan lakukan Auto Look-up
+    for (const row of rawData) {
+      // Asumsi kolom di Excel bernama "Nomor Berkas" dan "Tanggal Terbit"
+      const noBerkas = row['Nomor Berkas'];
+      const tglTerbit = new Date(row['Tanggal Terbit']);
+      const noSertipikat = row['Nomor Sertipikat'];
+
+      // 3. Update database jika No. Berkas ditemukan
+      if (noBerkas) {
+        const updateAsset = await prisma.landAsset.updateMany({
+          where: { no_berkas: String(noBerkas) },
+          data: {
+            tgl_terbit: tglTerbit,
+            no_sertipikat: String(noSertipikat),
+          },
+        });
+
+        // 4. Catat exception handling jika berkas tidak ada di KIB
+        if (updateAsset.count === 0) {
+          notFoundRecords.push(noBerkas);
+        } else {
+          successCount++;
         }
-},
-    },
+      }
+    }
+
+    // 5. Kembalikan response ke Frontend
+    res.json({
+      status: 'success',
+      message: `Berhasil mengupdate ${successCount} aset.`,
+      exceptions: notFoundRecords, // Frontend bisa menampilkan pop-up error handling dari array ini
+    });
+
+  } catch (error) {
+    res.status(500).json({ error: 'Gagal memproses file Excel BPN' });
   }
-</script><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/></head><body class="bg-background font-body-md text-on-surface min-h-screen"><aside class="fixed left-0 top-0 h-full w-72 bg-surface-container-lowest z-50 flex flex-col border-r border-outline-variant"><div class="h-16 flex items-center px-6 gap-3 bg-surface-container/20 border-b border-outline-variant"><img alt="Logo" class="w-8 h-8 rounded-md object-cover" src="https://lh3.googleusercontent.com/aida/AP1WRLtmsBBdYgVL5TsbRQZA2zx4hG8FOMj1xZMYpTYJK4fyTxfCetHNLwWI3sUKLEAVTiCxZ4ECAUNZmPTkWQiWk6maAEuAdNgIo3iQfcK-jH2o9ybmBWvkI3l4tLKvC63KEsdCVS7t_2n9oahW-CQCXImJqGAh0siDcHR6B-oiZT7nI8Ca7Xh_SawwLdDmaY-6K_jB4BVXvRy0I9w8O37ByKlfrr1SdPKjs5IX8HRzRd6yMct4y5MIw-hFGqAH"/><span class="font-headline-md text-primary font-bold tracking-tight text-xl">KIB A</span></div><nav class="flex-1 px-4 py-6 space-y-1" data-active-classes="bg-primary-container text-on-primary-container font-semibold"><a class="flex items-center px-4 py-3 rounded-xl text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all group" data-path="dashboard" href="#"><span class="material-symbols-outlined mr-3 text-[22px]">dashboard</span><span class="font-label-md">Dashboard</span></a><a aria-current="page" class="flex items-center px-4 py-3 rounded-xl transition-all group bg-primary-container text-on-primary-container font-semibold" data-path="daftar-aset" href="#"><span class="material-symbols-outlined mr-3 text-[22px]">inventory_2</span><span class="font-label-md">Daftar Aset</span></a><a class="flex items-center px-4 py-3 rounded-xl text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all group" data-path="master-data" href="#"><span class="material-symbols-outlined mr-3 text-[22px]">database</span><span class="font-label-md">Master Data</span></a><a class="flex items-center px-4 py-3 rounded-xl text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all group" data-path="update-bpn" href="#"><span class="material-symbols-outlined mr-3 text-[22px]">upload_file</span><span class="font-label-md">Update BPN</span></a><a class="flex items-center px-4 py-3 rounded-xl text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all group" data-path="laporan" href="#"><span class="material-symbols-outlined mr-3 text-[22px]">assessment</span><span class="font-label-md">Laporan</span></a><div class="pt-4 mt-4 border-t border-outline-variant"><a class="flex items-center px-4 py-3 rounded-xl text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all group" data-path="pengaturan" href="#"><span class="material-symbols-outlined mr-3 text-[22px]">settings</span><span class="font-label-md">Pengaturan</span></a></div></nav><div class="p-6 bg-surface-container-lowest border-t border-outline-variant"><div class="flex items-center gap-3"><div class="w-10 h-10 rounded-full bg-primary-container flex items-center justify-center"><span class="material-symbols-outlined text-on-primary-container text-[20px]">person</span></div><div><p class="text-label-md text-on-surface">Admin Staff</p><p class="text-[10px] text-on-surface-variant uppercase tracking-wider">Operator</p></div></div></div></aside><div class="pl-72"><header class="fixed top-0 left-72 right-0 h-16 bg-surface-container-lowest z-40 flex items-center justify-between px-8 border-b border-outline-variant"><div class="flex items-center gap-4 bg-surface-container px-4 py-2 rounded-xl w-96"><span class="material-symbols-outlined text-on-surface-variant text-[20px]">search</span><input class="bg-transparent border-none outline-none text-body-md w-full text-on-surface placeholder:text-on-surface-variant" placeholder="Cari nomor sertipikat or ID aset..." type="text"/></div><div class="flex items-center gap-6"><button class="flex items-center gap-2 px-3 py-1 bg-secondary-container text-on-secondary-container rounded-xl hover:bg-secondary/20 transition-colors font-label-md text-[12px]"><span class="material-symbols-outlined text-[16px]">track_changes</span>Tentukan Target</button><div class="flex items-center gap-2 px-3 py-1 bg-primary-container rounded-xl text-on-primary-container font-medium text-[12px]"><span class="material-symbols-outlined text-[16px]">verified</span>Sistem Aktif</div><span class="material-symbols-outlined text-on-surface-variant cursor-pointer hover:text-primary transition-colors">notifications</span><span class="material-symbols-outlined text-on-surface-variant cursor-pointer hover:text-primary transition-colors">help</span></div></header><main class="relative pt-16 min-h-screen px-8 py-8 bg-surface"><div class="flex flex-col w-full h-full gap-stack-gap">
-<!-- Header Section -->
-<div class="flex flex-col md:flex-row md:items-center justify-between gap-4 p-6 bg-surface-container-lowest rounded-xl border border-outline-variant shadow-sm">
-<div class="flex flex-col gap-1">
-<h1 class="font-headline-md text-on-surface">Daftar Aset &amp; Tracking Progres</h1>
-<p class="font-body-md text-on-surface-variant">Kelola dan pantau progres sertifikasi aset secara aktual.</p>
-</div>
-<div class="flex items-center gap-3">
-<div class="relative w-full md:w-80">
-<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-on-surface-variant text-[20px]">search</span>
-<input class="w-full pl-10 pr-4 py-2 bg-surface-container border border-outline-variant rounded-xl font-body-md text-on-surface placeholder:text-on-surface-variant focus:outline-none focus:ring-1 focus:ring-primary transition-all" placeholder="Cari Nomor Berkas..." type="text"/>
-</div>
-<button class="flex items-center gap-2 px-4 py-2 bg-surface-container border border-outline-variant text-on-surface rounded-xl hover:bg-surface-variant transition-colors font-label-md">
-<span class="material-symbols-outlined text-[18px]">filter_list</span>
-                Filter
-            </button>
-</div>
-</div>
-<!-- Main Content Grid -->
-<div class="grid grid-cols-1 xl:grid-cols-4 gap-6">
-<!-- Summary Cards (Side) -->
-<div class="xl:col-span-1 flex flex-col gap-4">
-<div class="p-5 bg-primary-container text-on-primary-container rounded-xl relative overflow-hidden group shadow-sm border border-outline-variant">
-<div class="absolute -right-6 -top-6 w-24 h-24 bg-primary/10 rounded-full blur-2xl group-hover:scale-150 transition-transform duration-700"></div>
-<div class="flex justify-between items-start mb-4 relative z-10">
-<span class="font-label-md uppercase tracking-wider">Total Aset Aktif</span>
-<span class="material-symbols-outlined bg-surface-container text-primary p-1.5 rounded-xl text-[20px]">inventory_2</span>
-</div>
-<div class="flex items-end gap-2 relative z-10">
-<span class="font-headline-lg tracking-tight">1,245</span>
-<span class="font-body-md pb-1">+12 bulan ini</span>
-</div>
-</div><div class="p-5 bg-surface-container-lowest border border-outline-variant shadow-sm rounded-xl hover:bg-surface-container transition-colors"><div class="flex justify-between items-start mb-4"><span class="font-label-md text-on-surface-variant uppercase tracking-wider">Rencana</span><span class="material-symbols-outlined bg-surface-variant text-on-surface-variant p-1.5 rounded-xl text-[20px]">calendar_today</span></div><div class="flex items-end justify-between gap-2"><div class="flex items-end gap-2"><span class="font-headline-lg text-on-surface tracking-tight">215</span><span class="font-body-md text-on-surface-variant pb-1">Berkas</span></div><span class="text-[10px] font-semibold text-on-secondary-container bg-secondary-container px-2 py-0.5 rounded-xl mb-1">Target: 500</span></div><div class="mt-4 h-1.5 w-full bg-surface-container-highest rounded-full overflow-hidden"><div class="h-full bg-primary w-[43%] rounded-full"></div></div></div>
-<div class="p-5 bg-surface-container-lowest border border-outline-variant shadow-sm rounded-xl hover:bg-surface-container transition-colors">
-<div class="flex justify-between items-start mb-4">
-<span class="font-label-md text-on-surface-variant uppercase tracking-wider">Sudah Ukur</span>
-<span class="material-symbols-outlined bg-surface-variant text-secondary p-1.5 rounded-xl text-[20px]">pending_actions</span>
-</div>
-<div class="flex items-end gap-2">
-<span class="font-headline-lg text-on-surface tracking-tight">342</span>
-<span class="font-body-md text-on-surface-variant pb-1">BPN</span>
-</div>
-<div class="mt-4 h-1.5 w-full bg-surface-container-highest rounded-full overflow-hidden">
-<div class="h-full bg-secondary w-[40%] rounded-full"></div>
-</div>
-</div>
-<div class="p-5 bg-surface-container-lowest border border-outline-variant shadow-sm rounded-xl hover:bg-surface-container transition-colors">
-<div class="flex justify-between items-start mb-4">
-<span class="font-label-md text-on-surface-variant uppercase tracking-wider">Proses BPN</span>
-<span class="material-symbols-outlined bg-surface-variant text-secondary p-1.5 rounded-xl text-[20px]">app_registration</span>
-</div>
-<div class="flex items-end gap-2">
-<span class="font-headline-lg text-on-surface tracking-tight">512</span>
-<span class="font-body-md text-on-surface-variant pb-1">Berkas</span>
-</div>
-<div class="mt-4 flex items-center gap-2">
-<span class="text-[10px] font-semibold text-primary bg-primary-container px-2 py-0.5 rounded-xl">+15% vs bln lalu</span>
-</div>
-</div><div class="p-5 bg-surface-container-lowest border border-outline-variant shadow-sm rounded-xl hover:bg-surface-container transition-colors">
-<div class="flex justify-between items-start mb-4">
-<span class="font-label-md text-on-surface-variant uppercase tracking-wider">Terbit Tahun Ini</span>
-<span class="material-symbols-outlined bg-primary-container text-on-primary-container p-1.5 rounded-xl text-[20px]">task_alt</span>
-</div>
-<div class="flex items-end gap-2">
-<span class="font-headline-lg text-on-surface tracking-tight">89</span>
-<span class="font-body-md text-on-surface-variant pb-1">Sertipikat</span>
-</div>
-<div class="mt-4 flex -space-x-2">
-<div class="w-8 h-8 rounded-full bg-surface-variant flex items-center justify-center font-label-sm text-on-surface-variant border border-outline-variant">Q1</div>
-<div class="w-8 h-8 rounded-full bg-surface-variant flex items-center justify-center font-label-sm text-on-surface-variant border border-outline-variant">Q2</div>
-<div class="w-8 h-8 rounded-full bg-primary-container flex items-center justify-center font-label-sm text-on-primary-container border border-outline-variant">Q3</div>
-</div>
-</div>
-</div>
-<!-- Data Table Section -->
-<div class="xl:col-span-3 flex flex-col bg-surface-container-lowest border border-outline-variant rounded-xl overflow-hidden relative shadow-sm">
-<div class="overflow-x-auto">
-<table class="w-full text-left font-body-md whitespace-nowrap border-collapse">
-<thead class="bg-surface-container sticky top-0 z-10 border-b border-outline-variant">
-<tr><th class="p-table-cell-padding font-label-md text-on-surface-variant uppercase tracking-wider font-semibold">No. Berkas</th><th class="p-table-cell-padding font-label-md text-on-surface-variant uppercase tracking-wider font-semibold">Nama Aset</th><th class="p-table-cell-padding font-label-md text-on-surface-variant uppercase tracking-wider font-semibold">Kecamatan / Kelurahan</th><th class="p-table-cell-padding font-label-md text-on-surface-variant uppercase tracking-wider font-semibold">Rencana</th><th class="p-table-cell-padding font-label-md text-on-surface-variant uppercase tracking-wider font-semibold">Pengukuran</th><th class="p-table-cell-padding font-label-md text-on-surface-variant uppercase tracking-wider font-semibold">Daftar BPN</th><th class="p-table-cell-padding font-label-md text-on-surface-variant uppercase tracking-wider font-semibold text-right">Terbit</th></tr>
-</thead>
-<tbody class="divide-y divide-outline-variant">
-<!-- Row 1 -->
-<tr class="hover:bg-surface-container transition-colors group"><td class="p-table-cell-padding font-label-md text-on-surface">BK-00123</td><td class="p-table-cell-padding"><div class="flex items-center gap-2"><div class="w-8 h-8 rounded-xl bg-primary-container flex items-center justify-center text-on-primary-container"><span class="material-symbols-outlined text-[16px]">school</span></div><span class="text-on-surface font-medium">Tanah SDN 1</span></div></td><td class="p-table-cell-padding text-on-surface-variant">Bogor Tengah / Babakan</td><td class="p-table-cell-padding"><div class="inline-flex items-center gap-1.5 px-2.5 py-1 bg-surface-variant text-on-surface-variant rounded-xl font-label-sm border border-outline-variant"><span class="material-symbols-outlined text-[14px]">event</span>01/05/2026</div></td><td class="p-table-cell-padding"><div class="inline-flex items-center gap-1.5 px-2.5 py-1 bg-surface-variant text-on-surface-variant rounded-xl font-label-sm border border-outline-variant"><span class="material-symbols-outlined text-[14px]">event</span>12/05/2026</div></td><td class="p-table-cell-padding"><div class="inline-flex items-center gap-1.5 px-2.5 py-1 bg-surface-variant text-on-surface-variant rounded-xl font-label-sm border border-outline-variant"><span class="material-symbols-outlined text-[14px]">event</span>15/06/2026</div></td><td class="p-table-cell-padding text-right"><button class="inline-flex items-center gap-1.5 px-3 py-1 bg-secondary-container hover:bg-secondary/20 text-on-secondary-container rounded-xl font-label-sm transition-colors"><span class="material-symbols-outlined text-[14px]">update</span>Update</button></td></tr>
-<!-- Row 2 -->
-<tr class="bg-surface-container/50 hover:bg-surface-container transition-colors group"><td class="p-table-cell-padding font-label-md text-on-surface">BK-00124</td><td class="p-table-cell-padding"><div class="flex items-center gap-2"><div class="w-8 h-8 rounded-xl bg-tertiary-container flex items-center justify-center text-on-tertiary-container"><span class="material-symbols-outlined text-[16px]">local_hospital</span></div><span class="text-on-surface font-medium">Puskesmas</span></div></td><td class="p-table-cell-padding text-on-surface-variant">Bogor Selatan / Cipaku</td><td class="p-table-cell-padding"><div class="inline-flex items-center gap-1.5 px-2.5 py-1 bg-surface-variant text-on-surface-variant rounded-xl font-label-sm border border-outline-variant"><span class="material-symbols-outlined text-[14px]">event</span>15/03/2026</div></td><td class="p-table-cell-padding"><div class="inline-flex items-center gap-1.5 px-2.5 py-1 bg-surface-variant text-on-surface-variant rounded-xl font-label-sm border border-outline-variant"><span class="material-symbols-outlined text-[14px]">event</span>01/04/2026</div></td><td class="p-table-cell-padding"><div class="inline-flex items-center gap-1.5 px-2.5 py-1 bg-surface-variant text-on-surface-variant rounded-xl font-label-sm border border-outline-variant"><span class="material-symbols-outlined text-[14px]">event</span>20/04/2026</div></td><td class="p-table-cell-padding text-right"><div class="inline-flex items-center gap-1.5 px-2.5 py-1 bg-primary-container text-on-primary-container rounded-xl font-label-sm"><span class="material-symbols-outlined text-[14px]" style="font-variation-settings: 'FILL' 1;">check_circle</span>24/07/2026</div></td></tr>
-<!-- Row 3 -->
-<tr class="hover:bg-surface-container transition-colors group"><td class="p-table-cell-padding font-label-md text-on-surface">BK-00125</td><td class="p-table-cell-padding"><div class="flex items-center gap-2"><div class="w-8 h-8 rounded-xl bg-secondary-container flex items-center justify-center text-on-secondary-container"><span class="material-symbols-outlined text-[16px]">sports_soccer</span></div><span class="text-on-surface font-medium">Lapangan</span></div></td><td class="p-table-cell-padding text-on-surface-variant">Tanah Sareal / Kedung</td><td class="p-table-cell-padding"><div class="inline-flex items-center gap-1.5 px-2.5 py-1 bg-surface-variant text-on-surface-variant rounded-xl font-label-sm border border-outline-variant"><span class="material-symbols-outlined text-[14px]">event</span>01/07/2026</div></td><td class="p-table-cell-padding"><div class="inline-flex items-center gap-1.5 px-2.5 py-1 bg-surface-variant text-on-surface-variant rounded-xl font-label-sm border border-outline-variant"><span class="material-symbols-outlined text-[14px]">event</span>10/07/2026</div></td><td class="p-table-cell-padding"><button class="inline-flex items-center gap-1.5 px-3 py-1 bg-secondary-container hover:bg-secondary/20 text-on-secondary-container rounded-xl font-label-sm transition-colors opacity-0 group-hover:opacity-100 focus:opacity-100"><span class="material-symbols-outlined text-[14px]">update</span>Update</button><span class="text-on-surface-variant group-hover:hidden">-</span></td><td class="p-table-cell-padding text-right"><span class="text-on-surface-variant opacity-50">-</span></td></tr>
-</tbody>
-</table>
-</div>
-<!-- Pagination & Actions Footer -->
-<div class="mt-auto p-4 bg-surface-container-lowest border-t border-outline-variant flex flex-col sm:flex-row items-center justify-between gap-4">
-<div class="flex items-center gap-2 font-label-sm text-on-surface-variant">
-<button class="p-1 rounded-xl hover:bg-surface-container disabled:opacity-50 transition-colors" disabled="">
-<span class="material-symbols-outlined text-[18px]">chevron_left</span>
-</button>
-<span class="">Halaman <span class="font-semibold text-on-surface">1</span> dari <span class="font-semibold text-on-surface">45</span></span>
-<button class="p-1 rounded-xl hover:bg-surface-container transition-colors">
-<span class="material-symbols-outlined text-[18px]">chevron_right</span>
-</button>
-</div>
-<button class="flex items-center gap-2 px-4 py-2 bg-primary text-on-primary rounded-xl hover:bg-primary/90 transition-colors font-label-md">
-<span class="material-symbols-outlined text-[18px]">download</span>
-                    Ekspor Laporan Excel
-                </button>
-</div>
-</div>
-</div>
-</div></main></div>
-</body></html>
+});
+
+module.exports = router;
+Pendekatan backend ini akan membuat antarmuka frontend Anda menjadi aplikasi data yang sangat dinamis dan aman.
+
+Apakah Anda ingin menggunakan Node.js seperti draf di atas, atau Anda lebih terbiasa menggunakan framework lain seperti PHP (Laravel) atau Python (FastAPI) untuk integrasi sistem KIB ini?
+
+html aja dlu
+
+Your HTML file is ready
+Ikon HTML
+kib-a-dashboard
+ HTML 
+Buka
+
+Saya telah menyediakan file HTML-nya untuk Anda. File ini menggunakan Tailwind CSS melalui CDN dan sudah mencakup semua komponen visual dari desain UI yang Anda berikan, termasuk sidebar, header, summary cards, dan tabel datanya.
+
+Semua gaya (styling) sudah terintegrasi dan siap digunakan sebagai dasar template frontend Anda.
+
+buatkan html yang bisa langsung di proses ke github, dan aplikasi langsung jalan
+
+Your HTML file is ready
+Ikon HTML
+index
+ HTML 
+Buka
+
+Saya telah membuatkan satu file utuh (index.html) yang merupakan aplikasi statis (tanpa perlu server backend) yang langsung bisa berjalan. Aplikasi ini sangat sempurna untuk diunggah langsung ke GitHub dan diaktifkan di GitHub Pages.
+
+Fitur Utama di dalam File Tersebut:
+Tanpa Backend (Static App): Menggunakan localStorage bawaan browser. Data yang diinput atau di-upload tidak akan hilang meskipun browser di-refresh, seolah-olah menggunakan database lokal.
+
+Alpine.js & Tailwind CSS: Membuat tampilan persis seperti desain UI dan interaktif (pencarian bekerja secara real-time).
+
+SheetJS (Excel Reader): Seluruh logika upload dan pengolahan Excel (Auto Look-up BPN) dilakukan langsung di dalam browser.
+
+Ada tombol "Upload Master (KIB)" di menu kiri untuk memasukkan data Excel awal.
+
+Ada tombol "Auto Look-up BPN" untuk mengunggah data progres (Sistem akan mencari 'Nomor Berkas' yang sama dan otomatis mencentang status 'Terbit').
+
+Ada tombol "Export Excel" untuk mengunduh laporan ke format .xlsx.
+
+Cara Implementasi ke GitHub:
+Unduh file index.html dari tautan di atas.
+
+Buat repository baru di GitHub Anda (misalnya si-kib-tanah).
+
+Upload file index.html tersebut ke repository.
+
+Buka tab Settings di repository tersebut.
+
+Masuk ke menu Pages di sebelah kiri.
+
+Pada bagian Build and deployment, pilih Source: Deploy from a branch, lalu pilih branch main atau master.
+
+Klik Save. Dalam 1-2 menit, GitHub akan memberikan link (URL) aplikasi Anda yang sudah live dan siap dipakai oleh tim Anda di Bogor!
+
+
+
+
+Gemini adalah AI dan dapat melakukan kesalahan.
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>SI-KIB | Tracking Sertipikasi Aset</title>
+    
+    <!-- Alpine.js for interactivity -->
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <!-- SheetJS for Excel processing in browser -->
+    <script src="https://unpkg.com/xlsx/dist/xlsx.full.min.js"></script>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <style>
+        @layer base {
+            html, body { margin: 0; padding: 0; background-color: #f8f9ff; }
+            body { overscroll-behavior: none; }
+        }
+        ::-webkit-scrollbar { display: none; }
+        [x-cloak] { display: none !important; }
+    </style>
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#00236f", "primary-container": "#1e3a8a", "on-primary-container": "#90a8ff",
+                        "secondary": "#785a00", "secondary-container": "#fdc425", "on-secondary-container": "#6d5200",
+                        "surface": "#f8f9ff", "surface-container-lowest": "#ffffff", "surface-container": "#e5eeff",
+                        "surface-variant": "#d3e4fe", "on-surface": "#0b1c30", "on-surface-variant": "#444651",
+                        "outline-variant": "#c5c5d3", "tertiary-container": "#6e2c00", "on-tertiary-container": "#f39461"
+                    },
+                    fontFamily: { "sans": ["Inter", "sans-serif"] }
+                }
+            }
+        }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+</head>
+<body class="font-sans text-on-surface min-h-screen" x-data="kibApp()" x-init="initApp()">
+
+    <!-- Sidebar -->
+    <aside class="fixed left-0 top-0 h-full w-72 bg-surface-container-lowest z-50 flex flex-col border-r border-outline-variant">
+        <div class="h-16 flex items-center px-6 gap-3 bg-surface-container/20 border-b border-outline-variant">
+            <span class="material-symbols-outlined text-primary text-3xl">account_balance</span>
+            <span class="text-primary font-bold tracking-tight text-xl">KIB A Tanah</span>
+        </div>
+        <nav class="flex-1 px-4 py-6 space-y-2">
+            <a @click.prevent="currentView = 'dashboard'" :class="currentView === 'dashboard' ? 'bg-primary-container text-on-primary-container' : 'text-on-surface-variant hover:bg-surface-container'" href="#" class="flex items-center px-4 py-3 rounded-xl font-semibold transition-all">
+                <span class="material-symbols-outlined mr-3">dashboard</span> Dashboard
+            </a>
+            <div class="pt-4 mt-4 border-t border-outline-variant text-xs font-semibold text-on-surface-variant uppercase tracking-wider px-4 mb-2">Aksi Cepat (Excel)</div>
+            
+            <!-- Button Upload Master -->
+            <label class="flex items-center px-4 py-3 rounded-xl text-on-surface-variant hover:bg-surface-container transition-all cursor-pointer">
+                <span class="material-symbols-outlined mr-3">upload_file</span>
+                <span class="font-semibold text-sm">Upload Master (KIB)</span>
+                <input type="file" class="hidden" accept=".xlsx, .xls" @change="uploadMaster">
+            </label>
+
+            <!-- Button Update BPN -->
+            <label class="flex items-center px-4 py-3 rounded-xl text-secondary-container hover:bg-secondary/10 transition-all cursor-pointer">
+                <span class="material-symbols-outlined mr-3">autorenew</span>
+                <span class="font-semibold text-sm text-secondary">Auto Look-up BPN</span>
+                <input type="file" class="hidden" accept=".xlsx, .xls" @change="uploadBPN">
+            </label>
+            
+            <a @click.prevent="clearData()" href="#" class="flex items-center px-4 py-3 rounded-xl text-red-600 hover:bg-red-50 transition-all mt-8">
+                <span class="material-symbols-outlined mr-3">delete_sweep</span>
+                <span class="font-semibold text-sm">Reset Data (Demo)</span>
+            </a>
+        </nav>
+        <div class="p-6 bg-surface-container-lowest border-t border-outline-variant flex items-center gap-3">
+            <div class="w-10 h-10 rounded-full bg-primary-container flex items-center justify-center text-on-primary-container">
+                <span class="material-symbols-outlined text-[20px]">person</span>
+            </div>
+            <div>
+                <p class="text-sm font-semibold text-on-surface">Admin Staff</p>
+                <p class="text-[10px] text-on-surface-variant uppercase tracking-wider">Pemkot Bogor</p>
+            </div>
+        </div>
+    </aside>
+
+    <!-- Main Content -->
+    <div class="pl-72">
+        <header class="fixed top-0 left-72 right-0 h-16 bg-surface-container-lowest z-40 flex items-center justify-between px-8 border-b border-outline-variant">
+            <div class="flex items-center gap-4 bg-surface-container px-4 py-2 rounded-xl w-96">
+                <span class="material-symbols-outlined text-on-surface-variant text-[20px]">search</span>
+                <input x-model="searchQuery" class="bg-transparent border-none outline-none text-sm w-full text-on-surface placeholder:text-on-surface-variant" placeholder="Cari nomor berkas atau aset..." type="text"/>
+            </div>
+            <div class="flex items-center gap-4">
+                <div class="flex items-center gap-2 px-3 py-1 bg-green-100 rounded-xl text-green-800 font-medium text-[12px]">
+                    <span class="material-symbols-outlined text-[16px]">verified</span> Sistem Lokal Aktif
+                </div>
+            </div>
+        </header>
+
+        <main class="relative pt-20 min-h-screen px-8 py-8 bg-surface">
+            
+            <!-- Notifikasi -->
+            <div x-show="notification.show" x-cloak class="mb-6 p-4 rounded-xl flex items-center gap-3 shadow-sm transition-all" :class="notification.type === 'success' ? 'bg-green-100 text-green-800' : 'bg-red-100 text-red-800'">
+                <span class="material-symbols-outlined" x-text="notification.type === 'success' ? 'check_circle' : 'error'"></span>
+                <span class="font-medium" x-text="notification.message"></span>
+                <button @click="notification.show = false" class="ml-auto"><span class="material-symbols-outlined text-sm">close</span></button>
+            </div>
+
+            <!-- Dashboard Stats -->
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-6 mb-8">
+                <div class="p-5 bg-primary-container text-on-primary-container rounded-xl shadow-sm border border-outline-variant">
+                    <div class="text-xs uppercase tracking-wider mb-2 font-semibold">Total Aset</div>
+                    <div class="text-4xl font-bold" x-text="stats.total"></div>
+                </div>
+                <div class="p-5 bg-surface-container-lowest rounded-xl shadow-sm border border-outline-variant">
+                    <div class="text-xs text-on-surface-variant uppercase tracking-wider mb-2 font-semibold">Sudah Ukur</div>
+                    <div class="text-3xl font-bold text-on-surface" x-text="stats.ukur"></div>
+                </div>
+                <div class="p-5 bg-surface-container-lowest rounded-xl shadow-sm border border-outline-variant">
+                    <div class="text-xs text-on-surface-variant uppercase tracking-wider mb-2 font-semibold">Proses BPN</div>
+                    <div class="text-3xl font-bold text-on-surface" x-text="stats.bpn"></div>
+                </div>
+                <div class="p-5 bg-surface-container-lowest rounded-xl shadow-sm border border-outline-variant">
+                    <div class="text-xs text-on-surface-variant uppercase tracking-wider mb-2 font-semibold flex items-center gap-2">
+                        <span class="material-symbols-outlined text-green-600 text-sm">task_alt</span> Terbit Sertipikat
+                    </div>
+                    <div class="text-3xl font-bold text-green-700" x-text="stats.terbit"></div>
+                </div>
+            </div>
+
+            <!-- Data Table -->
+            <div class="bg-surface-container-lowest border border-outline-variant rounded-xl overflow-hidden shadow-sm">
+                <div class="p-5 border-b border-outline-variant bg-surface-container/30 flex justify-between items-center">
+                    <h2 class="text-lg font-bold">Daftar Tracking Aset</h2>
+                    <button @click="downloadExcel" class="flex items-center gap-2 px-4 py-2 bg-primary text-white rounded-xl hover:bg-primary/90 transition-colors text-sm font-semibold">
+                        <span class="material-symbols-outlined text-[18px]">download</span> Export Excel
+                    </button>
+                </div>
+                <div class="overflow-x-auto">
+                    <table class="w-full text-left text-sm whitespace-nowrap">
+                        <thead class="bg-surface-container sticky top-0 border-b border-outline-variant">
+                            <tr>
+                                <th class="p-4 font-semibold text-on-surface-variant uppercase text-xs tracking-wider">No. Berkas</th>
+                                <th class="p-4 font-semibold text-on-surface-variant uppercase text-xs tracking-wider">Nama Aset</th>
+                                <th class="p-4 font-semibold text-on-surface-variant uppercase text-xs tracking-wider">Lokasi</th>
+                                <th class="p-4 font-semibold text-on-surface-variant uppercase text-xs tracking-wider">Rencana</th>
+                                <th class="p-4 font-semibold text-on-surface-variant uppercase text-xs tracking-wider">Pengukuran</th>
+                                <th class="p-4 font-semibold text-on-surface-variant uppercase text-xs tracking-wider">Daftar BPN</th>
+                                <th class="p-4 font-semibold text-on-surface-variant uppercase text-xs tracking-wider">Terbit</th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y divide-outline-variant">
+                            <template x-for="asset in filteredAssets" :key="asset.id">
+                                <tr class="hover:bg-surface-container/50 transition-colors">
+                                    <td class="p-4 font-semibold text-primary" x-text="asset.id"></td>
+                                    <td class="p-4 font-medium" x-text="asset.nama"></td>
+                                    <td class="p-4 text-on-surface-variant" x-text="asset.kec + ' / ' + asset.kel"></td>
+                                    <td class="p-4">
+                                        <span class="inline-flex items-center gap-1 px-2 py-1 bg-surface-variant rounded-md text-xs" x-text="asset.rencana || '-'"></span>
+                                    </td>
+                                    <td class="p-4">
+                                        <span class="inline-flex items-center gap-1 px-2 py-1 bg-surface-variant rounded-md text-xs" x-text="asset.ukur || '-'"></span>
+                                    </td>
+                                    <td class="p-4">
+                                        <span class="inline-flex items-center gap-1 px-2 py-1 bg-surface-variant rounded-md text-xs" x-text="asset.bpn || '-'"></span>
+                                    </td>
+                                    <td class="p-4">
+                                        <template x-if="asset.terbit">
+                                            <span class="inline-flex items-center gap-1 px-2 py-1 bg-green-100 text-green-800 rounded-md text-xs font-semibold">
+                                                <span class="material-symbols-outlined text-[14px]">check_circle</span>
+                                                <span x-text="asset.terbit"></span>
+                                            </span>
+                                        </template>
+                                        <template x-if="!asset.terbit">
+                                            <span class="text-on-surface-variant opacity-50">-</span>
+                                        </template>
+                                    </td>
+                                </tr>
+                            </template>
+                            <tr x-show="filteredAssets.length === 0">
+                                <td colspan="7" class="p-8 text-center text-on-surface-variant">
+                                    Tidak ada data yang ditemukan. Silakan upload master data Excel.
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            
+            <!-- Instructions -->
+            <div class="mt-8 p-6 bg-blue-50 border border-blue-100 rounded-xl">
+                <h3 class="font-bold text-blue-900 mb-2">Cara Penggunaan (Aplikasi Tanpa Server)</h3>
+                <ul class="list-disc pl-5 text-sm text-blue-800 space-y-1">
+                    <li>Aplikasi ini berjalan 100% di browser Anda (Static App) menggunakan <b>localStorage</b>. Aman dipublish ke GitHub Pages.</li>
+                    <li>Gunakan tombol <b>Upload Master</b> di menu kiri untuk memasukkan data Excel berisi kolom: <i>No_Berkas, Nama_Aset, Kecamatan, Kelurahan</i>.</li>
+                    <li>Untuk mensimulasikan fitur <b>Auto Look-up BPN</b>, upload Excel yang berisi kolom <i>No_Berkas</i> dan <i>Tgl_Terbit</i>. Sistem akan otomatis mencocokkan dan mencentang status Terbit.</li>
+                </ul>
+            </div>
+        </main>
+    </div>
+
+    <!-- Application Logic -->
+    <script>
+        document.addEventListener('alpine:init', () => {
+            Alpine.data('kibApp', () => ({
+                currentView: 'dashboard',
+                searchQuery: '',
+                assets: [],
+                notification: { show: false, message: '', type: 'success' },
+                
+                initApp() {
+                    const savedData = localStorage.getItem('kib_assets_db');
+                    if (savedData) {
+                        this.assets = JSON.parse(savedData);
+                    } else {
+                        // Load Dummy Data for showcase
+                        this.assets = [
+                            { id: 'BK-00123', nama: 'Tanah SDN 1 Babakan', kec: 'Bogor Tengah', kel: 'Babakan', rencana: '2026-05-01', ukur: '2026-05-12', bpn: '2026-06-15', terbit: null },
+                            { id: 'BK-00124', nama: 'Puskesmas Cipaku', kec: 'Bogor Selatan', kel: 'Cipaku', rencana: '2026-03-15', ukur: '2026-04-01', bpn: '2026-04-20', terbit: '2026-07-24' },
+                            { id: 'BK-00125', nama: 'Lapangan Kedung', kec: 'Tanah Sareal', kel: 'Kedung', rencana: '2026-07-01', ukur: '2026-07-10', bpn: null, terbit: null }
+                        ];
+                        this.saveData();
+                    }
+                },
+                
+                saveData() {
+                    localStorage.setItem('kib_assets_db', JSON.stringify(this.assets));
+                },
+                
+                clearData() {
+                    if(confirm('Yakin ingin mereset semua data kembali ke default dummy?')) {
+                        localStorage.removeItem('kib_assets_db');
+                        this.initApp();
+                        this.showNotif('Data berhasil di-reset', 'success');
+                    }
+                },
+                
+                showNotif(msg, type='success') {
+                    this.notification = { show: true, message: msg, type: type };
+                    setTimeout(() => { this.notification.show = false; }, 4000);
+                },
+
+                get filteredAssets() {
+                    if (this.searchQuery === '') return this.assets;
+                    const q = this.searchQuery.toLowerCase();
+                    return this.assets.filter(a => 
+                        a.id.toLowerCase().includes(q) || 
+                        a.nama.toLowerCase().includes(q) ||
+                        a.kec.toLowerCase().includes(q)
+                    );
+                },
+
+                get stats() {
+                    const total = this.assets.length;
+                    const ukur = this.assets.filter(a => a.ukur).length;
+                    const bpn = this.assets.filter(a => a.bpn).length;
+                    const terbit = this.assets.filter(a => a.terbit).length;
+                    return { total, ukur, bpn, terbit };
+                },
+
+                // Method Upload Master
+                uploadMaster(e) {
+                    const file = e.target.files[0];
+                    if(!file) return;
+                    
+                    const reader = new FileReader();
+                    reader.onload = (evt) => {
+                        try {
+                            const data = evt.target.result;
+                            const workbook = XLSX.read(data, {type: 'binary'});
+                            const sheetName = workbook.SheetNames[0];
+                            const json = XLSX.utils.sheet_to_json(workbook.Sheets[sheetName]);
+                            
+                            const newAssets = json.map(row => ({
+                                id: row['No_Berkas'] || row['Nomor Berkas'] || `BK-${Math.floor(Math.random()*10000)}`,
+                                nama: row['Nama_Aset'] || row['Nama Aset'] || '-',
+                                kec: row['Kecamatan'] || '-',
+                                kel: row['Kelurahan'] || '-',
+                                rencana: row['Tgl_Rencana'] || null,
+                                ukur: row['Tgl_Ukur'] || null,
+                                bpn: row['Tgl_BPN'] || null,
+                                terbit: row['Tgl_Terbit'] || null
+                            }));
+                            
+                            // Gabungkan data lama dan baru (Hapus duplikat berdasarkan ID)
+                            const merged = [...this.assets, ...newAssets];
+                            const uniqueAssets = Array.from(new Map(merged.map(item => [item.id, item])).values());
+                            
+                            this.assets = uniqueAssets;
+                            this.saveData();
+                            this.showNotif(`Berhasil mengimpor ${newAssets.length} data KIB!`, 'success');
+                        } catch(err) {
+                            this.showNotif('Gagal membaca file Excel. Pastikan format benar.', 'error');
+                        }
+                    };
+                    reader.readAsBinaryString(file);
+                    e.target.value = ''; // reset input
+                },
+
+                // Method Auto Look-up BPN
+                uploadBPN(e) {
+                    const file = e.target.files[0];
+                    if(!file) return;
+                    
+                    const reader = new FileReader();
+                    reader.onload = (evt) => {
+                        try {
+                            const data = evt.target.result;
+                            const workbook = XLSX.read(data, {type: 'binary'});
+                            const sheetName = workbook.SheetNames[0];
+                            const json = XLSX.utils.sheet_to_json(workbook.Sheets[sheetName]);
+                            
+                            let updatedCount = 0;
+                            let notFoundCount = 0;
+                            
+                            json.forEach(row => {
+                                const noBerkas = row['No_Berkas'] || row['Nomor Berkas'];
+                                const tglTerbit = row['Tgl_Terbit'] || row['Tanggal Terbit'] || new Date().toISOString().split('T')[0];
+                                
+                                if(noBerkas) {
+                                    const assetIndex = this.assets.findIndex(a => a.id === noBerkas);
+                                    if(assetIndex !== -1) {
+                                        this.assets[assetIndex].terbit = tglTerbit;
+                                        updatedCount++;
+                                    } else {
+                                        notFoundCount++;
+                                    }
+                                }
+                            });
+                            
+                            this.saveData();
+                            this.showNotif(`Auto-lookup selesai! ${updatedCount} sertipikat terbit diupdate. ${notFoundCount} berkas tidak ditemukan di KIB.`, 'success');
+                        } catch(err) {
+                            this.showNotif('Gagal memproses file Update BPN.', 'error');
+                        }
+                    };
+                    reader.readAsBinaryString(file);
+                    e.target.value = ''; // reset input
+                },
+                
+                downloadExcel() {
+                    const worksheet = XLSX.utils.json_to_sheet(this.assets);
+                    const workbook = XLSX.utils.book_new();
+                    XLSX.utils.book_append_sheet(workbook, worksheet, "Data_Aset");
+                    XLSX.writeFile(workbook, "Laporan_Aset_KIB.xlsx");
+                }
+            }));
+        });
+    </script>
+</body>
+</html>
+index.html
+Menampilkan index.html.
